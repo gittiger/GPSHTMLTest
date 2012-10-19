@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<title>GPS Html Test</title>
+<script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
+ 
+<script src="confMessage.js"> </script>
+</head>
+
+
+
+<style>
+body 
+{
+    background: #AAAAAA;
+}
+div#main 
+{
+    background: #000099;
+    height: 80px;
+    width: 300px;
+    padding: 2px;
+    -webkit-border-radius: 4px;
+}
+</style>
+
+
+
+<body>
+<center>
+<canvas id="myCanvas" width="300" height="80" style="border:1px solid #c3c3c3;">
+		Your
+		 browser does not support the canvas element.
+</canvas>
+</center>
+<script type="text/javascript">
+    var c=document.getElementById("myCanvas");
+    var cxt=c.getContext("2d");
+    var img=new Image()
+    img.src="applogo.png"
+    cxt.drawImage(img,0,0);
+</script>
+<center>
+<H2>GPS HTML Test</H2> 
+by Systems and Solution Division <br>
+Intermec Technologies Corportation <br>
+Copyright 2012 <br>
+All Rights Reserved <br>
+
+ <br><br>
+ <div id="main">
+   <font color="EEEEEE">
+    Pruebas Geolocalización HTML 5 y PhoneGap 
+    </font>
+  </div>
+  <br><br>
+ <button type="button" onclick="location.href='gpsinfo.html'" style="height: 30px; width: 120px">O K</button>
+ </center>
+</body>
+</html>
